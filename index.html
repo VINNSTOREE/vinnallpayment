@@ -3,56 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VPS Fantasy Store</title>
+    <title>Payment HanzX - Official</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1 class="glow-text">⚔️ VPS Fantasy Store 🏰</h1>
-        <p>Pilih kekuatan servermu dan taklukkan dunia digital!</p>
+        <h1 class="glow-text">Payment</h1>
+        <p>Selesaikan pembayaran Anda di sini</p>
     </header>
 
-    <section class="container">
-        <div class="vps-card warrior">
-            <img src="warrior.png" alt="VPS Warrior">
-            <h2>⚔️ VPS Warrior</h2>
-            <p><strong>Power:</strong> 1 Core</p>
-            <p><strong>Mana:</strong> 2GB RAM</p>
-            <p><strong>Inventory:</strong> 20GB SSD</p>
-            <p><strong>Harga:</strong> 💰 50.000 Gold/bulan</p>
-            <input type="text" value="VPS Warrior - 50.000 Gold" class="copy-text" readonly>
-            <button class="copy-btn" onclick="copyText(this)">📋 Salin Paket</button>
-            <a href="#" class="order-btn">Summon Now</a>
+    <section class="payment-container">
+        <h2>Pilih Pembayaran</h2>
+        <p>Silakan pilih metode pembayaran yang Anda inginkan:</p>
+
+        <div class="payment-card">
+            <img src="qris.png" alt="QRIS">
+            <div class="payment-info">
+                <h3>QRIS <span class="highlight">QRIS</span></h3>
+                <p>Pindai kode QR di bawah ini untuk menyelesaikan pembayaran Anda.</p>
+            </div>
         </div>
 
-        <div class="vps-card mage">
-            <img src="mage.png" alt="VPS Mage">
-            <h2>🔮 VPS Mage</h2>
-            <p><strong>Power:</strong> 2 Core</p>
-            <p><strong>Mana:</strong> 4GB RAM</p>
-            <p><strong>Inventory:</strong> 50GB SSD</p>
-            <p><strong>Harga:</strong> 💰 100.000 Gold/bulan</p>
-            <input type="text" value="VPS Mage - 100.000 Gold" class="copy-text" readonly>
-            <button class="copy-btn" onclick="copyText(this)">📋 Salin Paket</button>
-            <a href="#" class="order-btn">Summon Now</a>
-        </div>
-
-        <div class="vps-card dragon">
-            <img src="dragon.png" alt="VPS Dragon">
-            <h2>🐉 VPS Dragon</h2>
-            <p><strong>Power:</strong> 4 Core</p>
-            <p><strong>Mana:</strong> 8GB RAM</p>
-            <p><strong>Inventory:</strong> 100GB SSD</p>
-            <p><strong>Harga:</strong> 💰 200.000 Gold/bulan</p>
-            <input type="text" value="VPS Dragon - 200.000 Gold" class="copy-text" readonly>
-            <button class="copy-btn" onclick="copyText(this)">📋 Salin Paket</button>
-            <a href="#" class="order-btn">Summon Now</a>
+        <div class="payment-card">
+            <img src="dana.png" alt="DANA">
+            <div class="payment-info">
+                <h3>DANA <span class="highlight">DANA</span></h3>
+                <input type="text" value="1234567890" class="copy-text" readonly>
+                <button class="copy-btn" onclick="copyText(this)">Salin</button>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 VPS Fantasy Store. May your server never lag!</p>
+        <p>&copy; 2025 Payment HanzX. Semua Hak Dilindungi.</p>
     </footer>
 </body>
 </html>
