@@ -1,23 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-}
-
-/* Hero Section */
-.hero {
-    background: url('https://source.unsplash.com/1600x600/?server,technology') no-repeat center center;
+    font-family: 'MedievalSharp', cursive;
+    margin: 0;
+    padding: 0;
+    background: url('rpg-background.jpg') no-repeat center center fixed;
     background-size: cover;
-    padding: 100px 0;
+    text-align: center;
+    color: #fff;
 }
 
-.hero h1 {
-    font-size: 2.5rem;
+/* Efek Glow */
+.glow-text {
+    font-size: 36px;
+    text-shadow: 0 0 10px gold, 0 0 20px yellow, 0 0 30px orange;
 }
 
-.card {
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+/* Animasi Header */
+header {
+    background: linear-gradient(90deg, #ff0000, #ff7300, #ffea00, #48ff00, #00ffdd, #4800ff, #ff00ea);
+    background-size: 400% 400%;
+    padding: 20px;
+    animation: glowing-header 6s infinite linear;
 }
 
-.card h3 {
-    color: #007bff;
+/* Efek Glow di Kartu */
+.vps-card {
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 15px;
+    border: 3px solid gold;
+    box-shadow: 0px 4px 20px rgba(255, 215, 0, 0.8);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: pulse 3s infinite alternate;
+}
+
+/* Warna RPG Bersinar */
+.warrior {
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0.4));
+}
+.mage {
+    background: radial-gradient(circle, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0.4));
+}
+.dragon {
+    background: radial-gradient(circle, rgba(255, 165, 0, 0.8), rgba(255, 165, 0, 0.4));
+}
+
+/* Efek Hover */
+.vps-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(255, 215, 0, 1);
+}
+
+/* Tombol Bersinar */
+.order-btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #ffea00, #48ff00);
+    background-size: 200% 200%;
+    color: black;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+    animation: glowing-btn 4s infinite alternate;
+}
+
+.order-btn:hover {
+    background: #ffeb00;
+}
+
+/* Animasi Glow */
+@keyframes glowing-header {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes glowing-btn {
+    from {
+        box-shadow: 0 0 10px #ff0000, 0 0 20px #ff7300, 0 0 30px #ffea00;
+    }
+    to {
+        box-shadow: 0 0 20px #ffea00, 0 0 30px #48ff00, 0 0 40px #00ffdd;
+    }
+}
+
+@keyframes pulse {
+    from {
+        box-shadow: 0px 4px 20px rgba(255, 215, 0, 0.8);
+    }
+    to {
+        box-shadow: 0px 6px 30px rgba(255, 215, 0, 1);
+    }
 }
