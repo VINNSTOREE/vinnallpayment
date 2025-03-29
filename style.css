@@ -1,98 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
 body {
-    font-family: 'MedievalSharp', cursive;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: url('rpg-background.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-color: #0d0d0d;
+    color: white;
     text-align: center;
-    color: #fff;
 }
 
-/* Efek Glow */
-.glow-text {
-    font-size: 36px;
-    text-shadow: 0 0 10px gold, 0 0 20px yellow, 0 0 30px orange;
-}
-
-/* Animasi Header */
+/* Header */
 header {
-    background: linear-gradient(90deg, #ff0000, #ff7300, #ffea00, #48ff00, #00ffdd, #4800ff, #ff00ea);
-    background-size: 400% 400%;
     padding: 20px;
-    animation: glowing-header 6s infinite linear;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    text-shadow: 0 0 10px #00c6ff;
+    box-shadow: 0px 4px 10px rgba(0, 198, 255, 0.5);
 }
 
-/* Efek Glow di Kartu */
-.vps-card {
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-    border-radius: 15px;
-    border: 3px solid gold;
-    box-shadow: 0px 4px 20px rgba(255, 215, 0, 0.8);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    animation: pulse 3s infinite alternate;
-}
-
-/* Warna RPG Bersinar */
-.warrior {
-    background: radial-gradient(circle, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0.4));
-}
-.mage {
-    background: radial-gradient(circle, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0.4));
-}
-.dragon {
-    background: radial-gradient(circle, rgba(255, 165, 0, 0.8), rgba(255, 165, 0, 0.4));
-}
-
-/* Efek Hover */
-.vps-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 20px rgba(255, 215, 0, 1);
-}
-
-/* Tombol Bersinar */
-.order-btn {
-    display: inline-block;
-    background: linear-gradient(45deg, #ff0000, #ff7300, #ffea00, #48ff00);
-    background-size: 200% 200%;
-    color: black;
-    padding: 10px 20px;
-    margin-top: 10px;
-    text-decoration: none;
+.glow-text {
+    font-size: 32px;
     font-weight: bold;
-    border-radius: 5px;
-    transition: 0.3s;
-    animation: glowing-btn 4s infinite alternate;
+    text-shadow: 0 0 20px cyan, 0 0 30px blue;
 }
 
-.order-btn:hover {
-    background: #ffeb00;
+/* Container */
+.payment-container {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(20, 20, 20, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 198, 255, 0.4);
 }
 
-/* Animasi Glow */
-@keyframes glowing-header {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+/* Payment Card */
+.payment-card {
+    display: flex;
+    align-items: center;
+    background: #111;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px 0;
+    border: 1px solid cyan;
+    box-shadow: 0px 0px 10px rgba(0, 198, 255, 0.5);
 }
 
-@keyframes glowing-btn {
-    from {
-        box-shadow: 0 0 10px #ff0000, 0 0 20px #ff7300, 0 0 30px #ffea00;
-    }
-    to {
-        box-shadow: 0 0 20px #ffea00, 0 0 30px #48ff00, 0 0 40px #00ffdd;
-    }
+.payment-card img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
 
-@keyframes pulse {
-    from {
-        box-shadow: 0px 4px 20px rgba(255, 215, 0, 0.8);
-    }
-    to {
-        box-shadow: 0px 6px 30px rgba(255, 215, 0, 1);
-    }
+.payment-info {
+    flex: 1;
+    text-align: left;
 }
+
+.payment-info h3 {
+    margin: 0;
+    font-size: 18
